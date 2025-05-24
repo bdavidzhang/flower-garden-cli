@@ -1,0 +1,3 @@
+[console_scripts]
+flower-garden = flower_garden_cli.main:main
+garden = flower_garden_cli.main:main

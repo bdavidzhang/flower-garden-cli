@@ -1,0 +1,6 @@
+colorama>=0.4.0
+
+[dev]
+pytest>=6.0
+black
+flake8

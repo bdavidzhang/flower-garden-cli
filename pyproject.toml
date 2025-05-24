@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flower-garden-cli"
+version = "1.0.0"
+authors = [
+    {name = "David Zhang", email = "davzhang77@gmail.com"},
+]
+description = "Beautiful CLI flower garden game - water flowers and watch them grow into stunning patterns!"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Artistic Software",
+]
+keywords = ["cli", "game", "flowers", "patterns", "fractals", "art", "terminal"]
+dependencies = [
+    "colorama>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black",
+    "flake8",
+]
+
+[project.urls]
+Homepage = "https://github.com/bdavidzhang/flower-garden-cli"
+Documentation = "https://github.com/bdavidzhang/flower-garden-cli#readme"
+Repository = "https://github.com/bdavidzhang/flower-garden-cli.git"
+"Bug Tracker" = "https://github.com/bdavidzhang/flower-garden-cli/issues"
+
+[project.scripts]
+flower-garden = "flower_garden_cli.main:main"
+garden = "flower_garden_cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["flower_garden_cli*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
