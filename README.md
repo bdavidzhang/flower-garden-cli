@@ -44,13 +44,13 @@ garden
 pip install flower-garden-cli
 
 # Or install from GitHub
-pip install git+https://github.com/yourusername/flower-garden-cli.git
+pip install git+https://github.com/bdavidzhang/flower-garden-cli.git
 ```
 
 ### Method 2: Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/flower-garden-cli.git
+git clone https://github.com/bdavidzhang/flower-garden-cli.git
 cd flower-garden-cli
 
 # Install in development mode
@@ -63,7 +63,7 @@ flower-garden
 ### Method 3: Direct from Source
 ```bash
 # Download and run directly
-curl -O https://raw.githubusercontent.com/yourusername/flower-garden-cli/main/flower_garden_cli/main.py
+curl -O https://raw.githubusercontent.com/bdavidzhang/flower-garden-cli/main/flower_garden_cli/main.py
 python main.py
 ```
 
@@ -111,7 +111,7 @@ flower-garden-cli/
 ### Local Development Setup
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/flower-garden-cli.git
+git clone https://github.com/bdavidzhang/flower-garden-cli.git
 cd flower-garden-cli
 
 # Create virtual environment
@@ -135,35 +135,6 @@ black flower_garden_cli/
   - `colorama` (for colored terminal output)
 - **Platform**: Cross-platform (Windows, macOS, Linux)
 
-## 🔧 Publishing Your Package
-
-### To PyPI (Python Package Index):
-
-1. **Prepare your package**:
-   ```bash
-   python -m build
-   ```
-
-2. **Upload to TestPyPI first**:
-   ```bash
-   python -m twine upload --repository testpypi dist/*
-   ```
-
-3. **Test the installation**:
-   ```bash
-   pip install --index-url https://test.pypi.org/simple/ flower-garden-cli
-   ```
-
-4. **Upload to PyPI**:
-   ```bash
-   python -m twine upload dist/*
-   ```
-
-### To GitHub Releases:
-1. Create a new release on GitHub
-2. Upload the built wheel and tar.gz files
-3. Users can install with: `pip install https://github.com/user/repo/releases/download/v1.0.0/flower_garden_cli-1.0.0-py3-none-any.whl`
-
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
@@ -182,7 +153,7 @@ Contributions welcome! Please feel free to submit a Pull Request.
 
 If you enjoy this project, please give it a ⭐ on GitHub!
 
-**Issues?** Please report them [here](https://github.com/yourusername/flower-garden-cli/issues).
+**Issues?** Please report them [here](https://github.com/bdavidzhang/flower-garden-cli/issues).
 
 ---
 
