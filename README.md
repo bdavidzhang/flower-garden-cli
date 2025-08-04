@@ -8,6 +8,12 @@ Transform your terminal into a magical garden where you can nurture 5 different 
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+
+If you have `uv` installed, consider using: 
+```bash
+uvx --from flower-garden-cli garden
+```
+
 ## 🌸 Features
 
 - **5 Unique Flower Types**: Each with distinct mathematical patterns
