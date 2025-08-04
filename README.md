@@ -14,6 +14,10 @@ If you have `uv` installed, consider using:
 uvx --from flower-garden-cli garden
 ```
 
+Future plans:
+- [ ] Integrate with text effects, see https://github.com/ChrisBuilds/terminaltexteffects.
+- [ ] Learn more about terminal art. See HN post: https://news.ycombinator.com/item?id=44082472. 
+
 ## 🌸 Features
 
 - **5 Unique Flower Types**: Each with distinct mathematical patterns
