@@ -1,25 +1,11 @@
-# Directory structure for your package:
-# flower-garden-cli/
-# ├── flower_garden_cli/
-# │   ├── __init__.py
-# │   └── main.py
-# ├── pyproject.toml
-# ├── README.md
-# ├── LICENSE
-# └── setup.py (optional, for older pip versions)
-
-# =============================================================================
-# File: flower_garden_cli/__init__.py
-# =============================================================================
-
 """
-Beautiful CLI Flower Garden Game
-Water your flowers and watch them grow into stunning patterns!
+Flower Garden CLI v2.0
+A living, breathing terminal garden with weather, seasons, ecosystems, and achievements.
 """
 
-__version__ = "1.0.0"
-__author__ = "Your Name"
-__email__ = "your.email@example.com"
+__version__ = "2.0.0"
+__author__ = "David Zhang"
+__email__ = "davzhang77@gmail.com"
 
 from .main import main
 

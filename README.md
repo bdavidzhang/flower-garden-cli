@@ -1,40 +1,50 @@
-# 🌺 Flower Garden CLI
+# Flower Garden CLI v2.0
 
-**Beautiful CLI flower garden game - water flowers and watch them grow into stunning patterns!**
+**A living, breathing terminal garden with weather, seasons, ecosystems, and achievements.**
 
-Transform your terminal into a magical garden where you can nurture 5 different types of flowers, each growing into unique mathematical patterns and fractals.
+Grow 10 unique flowers with mathematical ASCII art patterns, watch butterflies visit, unlock achievements, and experience dynamic weather -- all from your terminal.
 
-![Flower Garden Demo](https://img.shields.io/badge/demo-terminal-brightgreen)
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-2.0.0-orange)
 
-
-If you have `uv` installed, consider using: 
+If you have `uv` installed:
 ```bash
 uvx --from flower-garden-cli garden
 ```
 
-Future plans:
-- [ ] Integrate with text effects, see https://github.com/ChrisBuilds/terminaltexteffects.
-- [ ] Learn more about terminal art. See HN post: https://news.ycombinator.com/item?id=44082472. 
+## What's New in v2.0
 
-## 🌸 Features
+- **10 Flower Types** -- 5 new Tier II flowers with unique patterns
+- **Weather & Seasons** -- sun, rain, wind, mist, storms, and starry nights affect growth
+- **Ecosystem** -- butterflies, bees, fireflies, ladybugs, hummingbirds, and dragonflies visit your garden
+- **14 Achievements** -- unlock milestones as you grow
+- **3 Color Themes** -- Garden, Midnight, and Sunset
+- **Dashboard UI** -- compact two-column overview with stats bar
+- **Weather Growth Bonus** -- storms give +3 bonus, rain gives +2
+- **Persistent Stats** -- tracks total waterings, sessions, visitors, and more
 
-- **5 Unique Flower Types**: Each with distinct mathematical patterns
-  - 🌹 **Spiral Rose** - Fibonacci spirals with blooming petals
-  - 🌳 **Fractal Tree** - Recursive branching with leaves
-  - 🌺 **Mandala Bloom** - Geometric circular patterns
-  - 🌊 **Wave Garden** - Flowing sine wave patterns
-  - ⭐ **Star Burst** - Radiating star patterns
+## Flowers
 
-- **Growth System**: 10 levels of growth for each flower
-- **Persistent Save**: Your garden state is automatically saved
-- **Colorful Display**: Beautiful terminal colors (with colorama)
-- **Interactive Menu**: Easy-to-use command interface
+### Tier I (Original)
+| Flower | Pattern |
+|--------|---------|
+| Spiral Rose | Fibonacci spiral with layered petals |
+| Fractal Tree | Recursive branching with blossoms |
+| Mandala Bloom | Concentric geometric petal rings |
+| Wave Garden | Layered sine waves with flower crests |
+| Star Burst | Radiating star with pulsing rays |
 
-## 🚀 Quick Start
+### Tier II (New in v2.0)
+| Flower | Pattern |
+|--------|---------|
+| Crystal Lotus | Symmetric diamond facets |
+| Phoenix Fern | Curling fronds that spiral like flames |
+| Galaxy Orchid | Swirling spiral arms with nebula dust |
+| Thunder Vine | Lightning-bolt vines with energy sparks |
+| Aurora Lily | Flowing aurora bands with shimmer highlights |
 
-Install and run with a single command:
+## Quick Start
 
 ```bash
 pip install flower-garden-cli
@@ -46,133 +56,124 @@ Alternative command:
 garden
 ```
 
-## 📦 Installation Methods
+## Installation
 
-### Method 1: pip install (Recommended)
+### pip (Recommended)
 ```bash
-# Install from PyPI (when published)
 pip install flower-garden-cli
 
-# Or install from GitHub
+# Or from GitHub
 pip install git+https://github.com/bdavidzhang/flower-garden-cli.git
 ```
 
-### Method 2: Local Development
+### Local Development
 ```bash
-# Clone the repository
 git clone https://github.com/bdavidzhang/flower-garden-cli.git
 cd flower-garden-cli
-
-# Install in development mode
 pip install -e .
-
-# Run the game
 flower-garden
 ```
 
-### Method 3: Direct from Source
-```bash
-# Download and run directly
-curl -O https://raw.githubusercontent.com/bdavidzhang/flower-garden-cli/main/flower_garden_cli/main.py
-python main.py
-```
+## How to Play
 
-## 🎮 How to Play
+1. Launch with `flower-garden` or `garden`
+2. Pick a flower to water (1-10)
+3. Watch it grow with mathematical ASCII patterns
+4. Growth is boosted by weather (storms = +3, rain = +2)
+5. Attract wildlife as your garden grows
+6. Unlock achievements for milestones
+7. Switch themes with option 14
+8. Progress saves automatically between sessions
 
-1. **Launch the game**: Run `flower-garden` in your terminal
-2. **Choose an action**: Select from the numbered menu options
-3. **Water flowers**: Watch them grow from seeds to beautiful patterns
-4. **Enjoy the patterns**: Each growth level reveals more complexity
-5. **Save automatically**: Your progress is saved between sessions
-
-### Menu Options:
-- `1-5`: Water individual flower types
-- `6`: View your entire garden
-- `7`: Water all flowers at once
-- `8`: Reset garden (start over)
-- `9`: Quit game
-
-## 🎨 Flower Types Preview
+### Menu
 
 ```
-🌹 Spiral Rose (Level 6)             ⭐ Star burst (Level 4)
-          ·                                  ·
-        ·······                              ·
-      ✿❀✿❀✿····                    ·   ·   ·
-    ✿❀····✿····                    · ✧ ·
-    ······❀✿···                      ✧ ✧ ✧
-    ·······❀···                        ✧✧✧
-   ······❀❀·····                 ···✧✧✧★✧✧✧···
-    ···········                        ✧✧✧
-    ···········                      ✧ ✧ ✧
-    ···········                    · ✧ ·
-      ·········                      ·   ·   ·
-        ·······                          ·
-          ·                              ·
+Water a Flower:
+  1-10  Water individual flowers (Tier I and II)
+
+Garden:
+  11    View Full Garden (all patterns)
+  12    Water All Flowers
+
+World:
+  13    Change Weather
+  14    Switch Theme (Garden / Midnight / Sunset)
+
+Progress:
+  15    Achievements
+  16    Ecosystem
+
+  18    Reset Garden
+   0    Quit
 ```
 
-## 🛠️ Development
+## Weather System
 
-### Project Structure
+Weather changes based on real-world seasons and affects growth bonuses:
+
+| Weather | Bonus | Description |
+|---------|-------|-------------|
+| Sunny | +1 | Warm sunshine |
+| Rainy | +2 | Gentle rain nourishes flowers |
+| Windy | +0 | Brisk wind sweeps through |
+| Misty | +1 | Soft mist drifts through |
+| Starry Night | +1 | Stars twinkle above |
+| Stormy | +3 | Thunder and lightning |
+
+## Ecosystem
+
+As your garden grows, creatures come to visit:
+
+| Creature | Growth Needed |
+|----------|---------------|
+| Ladybug | 5 |
+| Bee | 10 |
+| Butterfly | 15 |
+| Firefly | 20 |
+| Hummingbird | 30 |
+| Dragonfly | 40 |
+
+## Achievements
+
+14 achievements to unlock, including:
+- **First Drop** -- Water your first flower
+- **Master Gardener** -- Fully grow all 10 flowers
+- **Storm Chaser** -- Water during a storm
+- **Butterfly Whisperer** -- Attract 5 butterflies
+- **Century Garden** -- Reach 100 total growth levels
+
+## Project Structure
+
 ```
 flower-garden-cli/
-├── flower_garden_cli/
-│   ├── __init__.py
-│   └── main.py
-├── pyproject.toml
-├── README.md
-├── LICENSE
-└── tests/
-    └── test_main.py
+  flower_garden_cli/
+    __init__.py         # Package init, version
+    main.py             # Game loop, UI, FlowerGarden class
+    patterns.py         # 10 mathematical pattern generators
+    colors.py           # Color system, themes, gradients
+    weather.py          # Weather and seasons engine
+    ecosystem.py        # Creature spawning and movement
+    achievements.py     # Achievement definitions and tracking
+  pyproject.toml
+  README.md
+  LICENSE
+  Dockerfile
 ```
 
-### Local Development Setup
-```bash
-# Clone and setup
-git clone https://github.com/bdavidzhang/flower-garden-cli.git
-cd flower-garden-cli
+## Requirements
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+- **Python**: 3.7+
+- **Dependencies**: colorama (>=0.4.0)
+- **Platform**: Windows, macOS, Linux
 
-# Install in development mode
-pip install -e ".[dev]"
+## License
 
-# Run tests
-pytest
+MIT License - see [LICENSE](LICENSE) for details.
 
-# Format code
-black flower_garden_cli/
-```
+## Contributing
 
-## 📋 Requirements
-
-- **Python**: 3.7 or higher
-- **Dependencies**: 
-  - `colorama` (for colored terminal output)
-- **Platform**: Cross-platform (Windows, macOS, Linux)
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 🌟 Support
-
-If you enjoy this project, please give it a ⭐ on GitHub!
-
-**Issues?** Please report them [here](https://github.com/bdavidzhang/flower-garden-cli/issues).
+Contributions welcome! Please open a Pull Request.
 
 ---
 
-*Grow your digital garden, one flower at a time* 🌱✨
+*Grow your digital garden, one flower at a time*
